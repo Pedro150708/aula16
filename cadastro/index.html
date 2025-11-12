@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        	<meta charset="UTF-8">
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        	<title>
+				Ficha de Cadastro
+			</title>
+        	<link rel="stylesheet" type="text/css" href="pastacss/estilo.css">
+		<link rel="icon" type="image/png" href="fotos/icone1.png">
+	</head>
+	<body>
+		
+		<div class="container">
+    	<h1>Cadastro de Usuário</h1>
+    	<form method="GET" action="agradecimento.html">
+		<fieldset>
+			<legend> Dados Pessoais</legend><br/>
+			<label for="caixa1">Nome Completo:</label><br/>		
+			<input type="text" id="caixa1" name="nome" size="70" maxlength="40" minlength="2"/><br/>
+			<label for="caixa2">Endereço:</label><br/>	
+			<input type="text" id="caixa2" name="endereco" size="70" maxlength="100" required placeholder="Rua; Nº - Bairro"/><br/>
+			<label for="caixa3">E-mail:</label><br/>	
+			<input type="text" id="caixa3" name="email" size="70" maxlength="47" /><br/>	
+			<label for="caixa4">Estado:</label><br/>	
+			<input type="text" id="caixa4" name="uf" size="2" maxlength="2" title="Digite apenas 2 letras maiúsculas, ex: SP" /><br/>
+			<label>Região:</label><br /> 
+			<select name="estado"> 
+			<option value="1"> Norte</option> 
+			<option value="2"> Nordeste</option> 
+			<option value="3"> Centro-oeste</option>
+			<option value="4" selected> Sudeste</option>
+			<option value="5"> Sul</option>
+			</select>	
+			<label for="caixa1">CEP:</label><br/>	
+			<input type="text" id="caixa4" name="cep" size="10" maxlength="12" /><br/>
+			<label for="caixa5">Telefone</label><br/>
+			<input type="text" id="caixa5" name="telefone" size="15" maxlength="20" required placeholder="(12)34567-8910" /><br/><br /> 
+			<label> Sexo</label><br /> 
+			<input type="radio" name="sexo" value="masculino"> Masculino <br /> 
+			<input type="radio" name="sexo" value="feminino"> Feminino <br /> 
+			<input type="radio" name="sexo" value="feminino"> Não-binário <br /> 
+			<input type="radio" name="sexo" value="feminino"> Prefiro não informar <br /> 
+			<input type="radio" name="sexo" value="feminino"> Outro<br/>	<br/>	
+			<label>Data de Nascimento:</label><br/>	
+			<input type="date" name="data"></input><br/><br/><br/>
+			
+		</fieldset>
+		<br />
+		<br />
+		<fieldset>
+			<legend> Tipo de Residencia</legend>
+			<input type="radio" name="tipores" value="1"> Casa<br /> 
+			<input type="radio" name="tipores" value="2"> Apartamento<br /> 
+			<input type="radio" name="tipores" value="3"> Kitnet<br /> 			
+			<input type="radio" name="tipores" value="4"> Outro<br /> 			
+		</fieldset>	
+
+		<br />
+		<fieldset>
+			<legend> Você gostaria de:</legend>	
+			<input type="checkbox" name="receber1" value="1" /> 
+			Receber emails sobre produtos e lançamentamentos.<br />
+			<input type="checkbox" name="receber2" value="1"/> 
+			Receber notificação sobre a empresa.<br />
+			<input type="checkbox" name="receber1" value="1" /> 
+			Receber ofertas personalizadas com base nas suas preferências de compra.<br />
+			<input type="checkbox" name="receber1" value="1" /> 
+			Não desejo nenhum dos benefícios acima.<br />
+		</fieldset>	
+
+		<br />
+		<fieldset>
+			<legend> Qual animal de estimação você tem?</legend>	
+			<input type="checkbox" name="som1" value="1" /> 
+			Cachorro <br />
+			<input type="checkbox" name="som2" value="1" /> 
+			Gato<br />
+			<input type="checkbox" name="som3" value="1" /> 
+			Pássaro<br />			
+			<input type="checkbox" name="som3" value="1" /> 
+			Peixe<br />			
+			<input type="checkbox" name="som3" value="1" /> 
+			Outro<br />			
+			<input type="checkbox" name="som3" value="1" /> 
+			Não tenho nenhum animal de estimação<br />			
+		</fieldset>				
+		<br />
+		<fieldset>
+			<legend> Informação Adicional:</legend>
+			<textarea rows="3" cols="100" maxlength="200" name="obs" required placeholder="ÁREA PARA DIGITAÇÃO"></textarea>
+		</fieldset>
+		<br />
+
+		
+		<h2 class="final">Confirma Preenchimento?</h2>
+		<a href="file:///C:/linguagem_marcacao/aula16/agradecimento/agradecimento.html">
+			<input class="enviar" value="Enviar formulário"> 
+		</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" value="Apagar tudo"> 
+    </form>
+  </div>
+	</body>
+</html>

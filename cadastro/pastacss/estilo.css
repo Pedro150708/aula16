@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #8ebae6, #928ee6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 1000px;
+}
+
+h1 {
+  text-align: center;
+  color: #f52da5;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 2px solid #b0c4de;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 95%;
+}
+
+legend {
+  color: #922c51;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: rgb(96, 29, 124)
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #3b4a6b;
+  box-shadow: 0 0 5px #b0c4de;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.enviar{
+  background-color: #3b4a6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+  text-align: center;
+}
+input[type="reset"] {
+  background-color: #3b4a6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+input[type="reset"] {
+  background-color: #deb0d0;
+  color: #000;
+}
+
+input[type="submit"]:hover {
+  background-color: #3c9cb1;
+}
+
+input[type="reset"]:hover {
+  background-color: #c92e6c;
+}
+
+input[type="date"]{
+  padding: 0 10px;
+}
+
+a{
+  text-decoration: none;
+}
